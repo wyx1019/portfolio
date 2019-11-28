@@ -332,25 +332,29 @@ footer .footer-wrapper {
 
 @media (min-width: 768px) {
   body {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   br {
     display: none;
   }
   .kana {
-    font-size: 1.1rem;
-  }
-  .alphabet {
     font-size: 1rem;
   }
+  .alphabet {
+    font-size: 0.9rem;
+  }
   .top {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .top .top-text span {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
   .top img {
     height: 350px;
+  }
+  .box05 .btn {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   .text-content04 br {
     display: block;
