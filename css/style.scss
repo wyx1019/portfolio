@@ -124,7 +124,7 @@ ul,ol{
   padding:10px 5px; 
   box-sizing: border-box;
   background:rgba(226, 226, 226, 0.5);
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 h2{
@@ -141,10 +141,10 @@ h2{
     font-size:1.5rem;
   }
   .kana{
-    font-size:1rem;
+    font-size:1.1rem;
   }
   .alphabet{
-    font-size:0.9rem;
+    font-size:1rem;
   }
 }
 // chronology
@@ -162,7 +162,7 @@ table{
   margin:0 auto;
   padding:20px 10px 20px 30px;
   border:#010141 2px solid;
-  border-radius: 8px;
+  border-radius: 5px;
   text-align: left;
   letter-spacing: -0.3px;
   tr{
@@ -198,69 +198,31 @@ table{
 }
 
 // hobby
-#hobby{
-  padding-top:40px;
-  margin-top:-40px;
-}
-
-.wider{
-  max-width:1100px;
-}
-
-#seiyu{
-  margin:0 40px;
-}
-.btn{
-    display: flex;
-    justify-content: center;
-    input{
-        width:100px;
-        margin:0 20px;
-        padding:10px;
-        background:#687caf;
-        box-shadow: 1px 1px 2px #010141;
-        color:white;
-        border:none;
-        border-radius: 5px;
-        font-weight: 600;
-        transition:all .2s ease-in-out;
-        &:hover{
-          background:white;
-          color:#687caf;
-          cursor: pointer;
-          transform:scale(1.02) translate(0px,-5px);
-        }
-    }
-}
-// .is-show{
-//   background:white;
-//   color:#687caf;
-// }
-
-.text-content04-0{
-    // text-align: justify;
-    max-width:500px;
-    margin:0 auto;
-}
-.card{
-  background: #f2f2f2;
-  padding:20px;
-  margin:20px 1px;
-  border-radius: 7px;
-  flex-basis: 180px;
-}
-.text-content04-1{
-  text-align: left;
-}
-.card-wrapper{
+.btn {
+  margin:40px;
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap:wrap;
-  margin:10px auto;
-  .box07{
-    padding-left:30px;
+  justify-content: center;
+  flex-wrap: wrap;
+    input{
+    background:none;
+    border:#687caf 2px solid;
+    border-radius: 5px;
+    color:#687caf;
+    width:300px;
+    height:150px;
+    padding:40px;
+    margin:0 40px;
+    font-size:1.2rem;
+    transition: .4s;
+    cursor: pointer;
+    &:hover{
+      background:#687caf;
+      color:white;
+    }
   }
-} 
+}
+
+
 
 // page top
 #page_top{
@@ -291,7 +253,7 @@ table{
   position: absolute;
   width: 25px;
   height: 25px;
-  top: -25px;
+  top: -35px;
   bottom: 0;
   right: 0;
   left: 0;
@@ -303,7 +265,7 @@ table{
   font-size: 13px;
   color: #fff;
   position: absolute;
-  top: 30px;
+  top: 35px;
   bottom: 0;
   right: 0;
   left: 0;
@@ -331,12 +293,12 @@ footer{
   br{
       display: none;
   } 
-  // .kana{
-  //   font-size:1rem;
-  // }
-  // .alphabet{
-  //   font-size:0.9rem;
-  // }
+  .kana{
+    font-size:1.1rem;
+  }
+  .alphabet{
+    font-size:1rem;
+  }
   .top{
       font-size:1.5rem;
        .top-text{

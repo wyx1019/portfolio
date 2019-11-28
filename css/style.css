@@ -153,7 +153,7 @@ ul, ol {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: rgba(226, 226, 226, 0.5);
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 h2 {
@@ -171,11 +171,11 @@ h2 {
 }
 
 .box03 .kana {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .box03 .alphabet {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 #chronology .box05 {
@@ -192,7 +192,7 @@ table {
   margin: 0 auto;
   padding: 20px 10px 20px 30px;
   border: #010141 2px solid;
-  border-radius: 8px;
+  border-radius: 5px;
   text-align: left;
   letter-spacing: -0.3px;
 }
@@ -232,83 +232,36 @@ table td:first-child {
   padding-bottom: 20px;
 }
 
-#hobby {
-  padding-top: 40px;
-  margin-top: -40px;
-}
-
-.wider {
-  max-width: 1100px;
-}
-
-#seiyu {
-  margin: 0 40px;
-}
-
 .btn {
+  margin: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .btn input {
-  width: 100px;
-  margin: 0 20px;
-  padding: 10px;
-  background: #687caf;
-  -webkit-box-shadow: 1px 1px 2px #010141;
-          box-shadow: 1px 1px 2px #010141;
-  color: white;
-  border: none;
+  background: none;
+  border: #687caf 2px solid;
   border-radius: 5px;
-  font-weight: 600;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  color: #687caf;
+  width: 300px;
+  height: 150px;
+  padding: 40px;
+  margin: 0 40px;
+  font-size: 1.2rem;
+  -webkit-transition: .4s;
+  transition: .4s;
+  cursor: pointer;
 }
 
 .btn input:hover {
-  background: white;
-  color: #687caf;
-  cursor: pointer;
-  -webkit-transform: scale(1.02) translate(0px, -5px);
-          transform: scale(1.02) translate(0px, -5px);
-}
-
-.text-content04-0 {
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.card {
-  background: #f2f2f2;
-  padding: 20px;
-  margin: 20px 1px;
-  border-radius: 7px;
-  -ms-flex-preferred-size: 180px;
-      flex-basis: 180px;
-}
-
-.text-content04-1 {
-  text-align: left;
-}
-
-.card-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 10px auto;
-}
-
-.card-wrapper .box07 {
-  padding-left: 30px;
+  background: #687caf;
+  color: white;
 }
 
 #page_top {
@@ -344,7 +297,7 @@ table td:first-child {
   position: absolute;
   width: 25px;
   height: 25px;
-  top: -25px;
+  top: -35px;
   bottom: 0;
   right: 0;
   left: 0;
@@ -357,7 +310,7 @@ table td:first-child {
   font-size: 13px;
   color: #fff;
   position: absolute;
-  top: 30px;
+  top: 35px;
   bottom: 0;
   right: 0;
   left: 0;
@@ -383,6 +336,12 @@ footer .footer-wrapper {
   }
   br {
     display: none;
+  }
+  .kana {
+    font-size: 1.1rem;
+  }
+  .alphabet {
+    font-size: 1rem;
   }
   .top {
     font-size: 1.5rem;
