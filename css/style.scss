@@ -1,0 +1,366 @@
+body{
+    text-align: center;
+    font-size:1rem;
+    margin:0;
+    padding:0;
+    color:#010141;
+    box-sizing: border-box;
+    background:white;
+    line-height: 1.7;
+    // font-family: 'Gabriela', 'Noto Serif JP', serif;
+}
+// header
+nav{
+  background:white;
+  box-shadow: rgba(0, 0, 0, 0.3);
+  width:100%;
+  height:60px;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 999;
+  .nav-list{
+      list-style:none;
+      display: flex;
+      align-items: center;          
+
+        .menu-item{
+            margin:0 auto;
+        a{
+          text-decoration: none;
+          color:#010141;
+          font-weight: 600;
+          padding:10px;
+          &:hover{
+            background:rgba(226, 226, 226, 0.5);
+          }
+        }
+      }
+    }
+      .logo{
+        margin:0;
+        padding:5px 10px;
+          li{
+              background:#010141;
+              color:white;
+              font-weight: 600;
+              border-radius: 50%;
+              width:50px;
+              height: 50px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+          }
+      }
+
+}
+li{
+    list-style-type: none;
+}
+ul,ol{  
+    padding:0;
+}
+
+.top{
+  margin-top:60px;
+  font-weight: 500;
+  .top-text{
+    margin:100px auto 40px;
+    span{
+      color:white;
+      background:#010141;
+      font-size: 1.8rem;
+    }
+  }
+  img{
+    max-height: 300px;
+  }
+}
+
+// loading
+#loading{
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  }
+  #loader-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #FFF;
+  z-index: 1;
+  }
+  #main-contents{
+  text-align: center;
+  margin-top: 20%;
+  }
+
+//   content begin
+.contents-wrapper{
+    width:100%;
+    margin:0 auto; 
+}
+
+#profile{
+    background:url(../img/bg.jpg) no-repeat center center fixed;
+    background-size:cover;
+    padding:25px 0 50px;
+}
+.box{
+  max-width:700px;
+  margin:0 auto;
+  margin-top:100px;
+  padding-top:-100px;
+}
+
+.container{
+  margin:60px 10px;
+  padding:10px 5px; 
+  box-sizing: border-box;
+  background:rgba(226, 226, 226, 0.5);
+  border-radius: 8px;
+}
+
+h2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:#010141;
+}
+
+.box03 {
+  img{
+      border-radius: 50%;
+  }
+  .kanji{
+    font-weight: 600;
+    font-size:1.5rem;
+  }
+  .kana{
+    font-size:1rem;
+  }
+  .alphabet{
+    font-size:0.9rem;
+  }
+}
+// chronology
+#chronology{
+  .box05{
+    margin:30px 10px 50px;
+    padding:20px 5px;
+  }
+}
+.white{
+  background:white;
+  margin-top:-60px;
+}
+table{
+  margin:0 auto;
+  padding:20px 10px 20px 30px;
+  border:#010141 2px solid;
+  border-radius: 8px;
+  text-align: left;
+  letter-spacing: -0.3px;
+  tr{
+    display: block;
+    margin:20px 0;
+  }
+  td{
+    display: inline-block;
+    &:first-child{
+      font-weight: 600;
+      font-size:0.8rem;
+    }
+  }
+}
+
+// personality
+#personality{
+  background-image: radial-gradient(#c2e9fb -50%, #687caf 120%);
+  padding:25px 0 50px;
+}
+.text-content03{
+    padding:10px 25px;
+    max-width: 550px;;
+    text-align:justify;
+    margin:0 auto;
+    .size-change{
+        font-size:1.5rem;
+        font-weight: 500;
+    }
+}
+.box06{
+  padding-bottom:20px;
+}
+
+// hobby
+#hobby{
+  padding-top:40px;
+  margin-top:-40px;
+}
+
+.wider{
+  max-width:1100px;
+}
+
+#seiyu{
+  margin:0 40px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    input{
+        width:100px;
+        margin:0 20px;
+        padding:10px;
+        background:#687caf;
+        box-shadow: 1px 1px 2px #010141;
+        color:white;
+        border:none;
+        border-radius: 5px;
+        font-weight: 600;
+        transition:all .2s ease-in-out;
+        &:hover{
+          background:white;
+          color:#687caf;
+          cursor: pointer;
+          transform:scale(1.02) translate(0px,-5px);
+        }
+    }
+}
+// .is-show{
+//   background:white;
+//   color:#687caf;
+// }
+
+.text-content04-0{
+    // text-align: justify;
+    max-width:500px;
+    margin:0 auto;
+}
+.card{
+  background: #f2f2f2;
+  padding:20px;
+  margin:20px 1px;
+  border-radius: 7px;
+  flex-basis: 180px;
+}
+.text-content04-1{
+  text-align: left;
+}
+.card-wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap:wrap;
+  margin:10px auto;
+  .box07{
+    padding-left:30px;
+  }
+} 
+
+// page top
+#page_top{
+  width: 100px;
+  height: 60px;
+  position: fixed;
+  right: 20px;
+  bottom:-80px;
+  background: #687caf;
+  opacity: 0.8;
+  border-radius: 3px;
+  &:hover{
+    -webkit-transform: scale(1.02) translate(0px, -5px);
+    transform: scale(1.02) translate(0px, -5px);
+  }
+  a{
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 60px;
+  text-decoration: none;
+  &::before{
+    font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -25px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  }
+  &::after{
+  content: 'PAGE TOP';
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  }
+  }
+}
+
+footer{
+    margin-top:70px;
+    padding-top:5px;
+    background:#010141;
+    color:white;
+    .footer-wrapper{
+        padding:5px;
+        font-size:0.8rem;
+    }
+}
+
+@media (min-width: 768px){
+  body{
+    font-size:1.2rem;
+  }
+  br{
+      display: none;
+  } 
+  // .kana{
+  //   font-size:1rem;
+  // }
+  // .alphabet{
+  //   font-size:0.9rem;
+  // }
+  .top{
+      font-size:1.5rem;
+       .top-text{
+           span{
+           font-size:2.5rem;
+           }
+       }
+   img{
+       height:350px; 
+   }
+  }
+  .text-content04{
+    br{
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 1024px){
+
+    nav{
+      justify-content: space-evenly;
+      .menu-item{
+        padding:0 10px;
+      }
+    }
+}

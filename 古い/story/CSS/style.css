@@ -1,0 +1,53 @@
+nav ul{
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+    text-align: center;
+    }
+nav ul li{
+    display: table-cell;
+    min-width: 50px;
+    position: relative;
+}
+
+a{
+    color: rgb(202, 133, 49);
+    text-decoration:none;
+    font-weight:bold;
+}
+
+a:hover{
+    color:brown;
+    background-color:#ccc;
+  }
+
+p{
+    text-align:center;
+
+}
+
+td{
+    text-align:left;
+
+    
+}
+
+th{
+    text-align:center;
+
+}
+
+footer{
+    text-align: center;
+
+}
+
+body{
+    background-image:url(../img/background02.jpg);
+    color:brown;
+}
+
+header{
+    text-align:center;
+}
