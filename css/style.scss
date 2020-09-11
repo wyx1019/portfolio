@@ -30,8 +30,7 @@ ol {
 
 .box {
   max-width: 700px;
-  margin: 0 auto;
-  margin-top: 100px;
+  margin: 100px auto;
   padding-top: -100px;
 }
 
@@ -261,21 +260,26 @@ table {
     }
   }
 }
+
 .modal {
   position: fixed;
   width: 90%;
   height: 100vh;
   top: 0;
+  left: 0;
+  margin: 0 auto;
   display: none;
+
   .modal-content {
-    padding: 50px 35px 45px;
+    padding: 5% 10%;
     min-width: 200px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-30%, -50%);
     background: white;
     border: 3px solid #010141;
+
     .modal-close {
       margin: 15px;
       position: absolute;
@@ -288,6 +292,7 @@ table {
       color: #010141;
       cursor: pointer;
     }
+
     p {
       font-weight: 700;
     }
@@ -359,16 +364,20 @@ footer {
   .footer-wrapper {
     padding: 5px;
     font-size: 0.8rem;
+
     address {
       display: inline;
+
       a {
         color: white;
         text-decoration: none;
+
         &:hover {
           text-decoration: underline;
         }
       }
     }
+
     small {
       display: block;
     }

@@ -30,8 +30,7 @@ ol {
 
 .box {
   max-width: 700px;
-  margin: 0 auto;
-  margin-top: 100px;
+  margin: 100px auto;
   padding-top: -100px;
 }
 
@@ -282,17 +281,19 @@ table td:first-child {
   width: 90%;
   height: 100vh;
   top: 0;
+  left: 0;
+  margin: 0 auto;
   display: none;
 }
 
 .modal .modal-content {
-  padding: 50px 35px 45px;
+  padding: 5% 10%;
   min-width: 200px;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-30%, -50%);
+          transform: translate(-30%, -50%);
   background: white;
   border: 3px solid #010141;
 }
