@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,175 +10,171 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen,tv">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/script.js"></script>
     <title>YUXING|オウ　ウセイの自己紹介サイト</title>
 </head>
+
 <body>
     <header>
-            <nav>
-                      <ul class="nav-list">
-                            <li class="menu-item"><a href="#profile">About Me</a></li>
-                            <li class="menu-item"><a href="#chronology">年表</a></li>
-                            <li class="menu-item"><a href="#personality">特徴</a></li>
-                            <li class="menu-item"><a href="#hobby">趣味</a></li>
-                      </ul>
-                      <ul class="logo">
-                         <li>星</li>
-                      </ul>
-            </nav>        
+        <nav>
+            <ul class="nav-list">
+                <li class="menu-item"><a href="#profile">About Me</a></li>
+                <li class="menu-item"><a href="#chronology">年表</a></li>
+                <li class="menu-item"><a href="#strength">長所</a></li>
+                <li class="menu-item"><a href="#hobby">趣味</a></li>
+            </ul>
+            <ul class="logo">
+                <li>星</li>
+            </ul>
+        </nav>
 
     </header>
-    <main>     
+    <main>
         <div class="top">
-            <div class="top-text">          
-                <p class="top-message">はじめまして、<span>オウ　ウセイ</span>です。</p>
-                <p class="top-message">フロントエンドエンジニアを目指して
-                <br>頑張っています。
+            <div class="top-text">
+                <p>はじめまして、<span>オウ　ウセイ</span>です。</p>
+                <p>日本でエンジニアを目指して
+                    <br>頑張っています。
                 </p>
-                <p class="top-decoration">KEEP LEARNING, KEEP GROWING.</p>
-            </div>  
-            <img src="img/bg_main.svg" alt="">
-        </div>
-    <div class="contents-wrapper">
-        <section id="profile">
-            <div class="box">
-            <div class="container">
-            <h2>☆About Me</h2>
-            <div class="box03">
-                    <img src="img/img_self03.jpg" alt="自分の写真" width="200" height="200">
-                    <div class="kanji">王　宇星</div>
-                    <div class="kana">オウ　ウセイ</div>
-                    <div class="alphabet">WANG YUXING</div>
+                <p>KEEP LEARNING, KEEP GROWING.</p>
             </div>
-            <div class="box04">
-                <h3 class="title-content01">言語</h3>
-                <p class="text content01">日本語、英語、中国語</p>
-                <h3 class="title-content01">スキル</h3>
-                <p class="text content01">HTML5、CSS3、Javascript、Vue.js</p>
-                <h3 class="title-content01">使えるツール</h3>
-                <p class="text content01">VS code、Photoshop、Illustrator、Dreamweaver</p>
-                <h3 class="title-content01">取得資格</h3>
-                <p class="text content01">TOEIC 890点、
-                        <br>日本語検定1級、
-                        <br>ITパスポート、
-                        <br>色彩検定3級、</p>
-                <h3 class="title-content01">好きな言葉</h3>
-                <p class="text content01">Keep learning,keep growing</p>                
-            </div>
+            <div class="mv"><img src="img/bg_main.svg" alt=""></div>
         </div>
-    </div>
-    </section>
-
-    <section id="chronology">
-        <div class="box">
-        <div class="container white">
-        <div class="box05">
-         <h2>☆My年表</h2>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>2019.4-2019.11</td>
-                        <td>日本電子専門学校　Webデザイン科</td>
-                    </tr>
-                    <tr>
-                        <td>2016.10-2019.3</td>
-                        <td>早稲田大学院　アジア太平洋研究科　<br>国際経済ゼミ</td>
-                    </tr>
-                    <tr>
-                        <td>2012.9-2016.6</td>
-                        <td>（中国）上海財経大学　外国語学部　<br>ビジネス英語専攻</td>
-                    </tr>
-                    <tr>
-                            <td>2009.9-2012.6</td>
-                            <td>（中国）南昌市外国語学校（高等学校）</td>
-                    </tr>
-                    <tr>
-                            <td>2006.9-2009.6</td>
-                            <td>（中国）南昌市外国語学校（中学校）</td>
-                    </tr>
-                </tbody>
-            </table>
-            </div>
-        
-
-    </section>
-
-        <section id="personality">
-        <div class="box">
-        <div class="container">
-            <h2>☆My特徴</h2>
-            <ul class="box06">
-                <li class="text-content03"><span class="size-change">学び続ける</span>意欲があります。常に新しい学びを自主的にチャレンジしています。</li>
-                <li class="text-content03"><span class="size-change">堅実</span>的に物事に取り組む人です。自分の決めた目標に向けて一途に努力するようにしています。</li>
-                <li class="text-content03"><span class="size-change">独学力</span>が強みです。大学時期に2年半の独学で日本語検定1級を取得しました。</li>
-                <li class="text-content03"><span class="size-change">控えめ</span>な性格です。普段話が多くないですが、伝えるべきことはちゃんと論理的に伝えられます。</li>
-            </ul>
-        </div>
-        </div>
-        </section>  
-        <section id="hobby">
-        <div class="box wider">
-        <div class="container white">
-        <div class="box05">
-            <h2>☆My趣味</h2>
-            <p class="text-content04">趣味は旅行とライブ参戦です。
-                    <br>趣味は普段元気の源です。
-                    <br>休日に趣味に取り組んで、オンとオフをつけるようにしています。</p>    
-                    <div class="btn">
-                            <h3>
-                                <input type="button" value="旅行ギャラリー">
-                            </h3>
-                            <h3>
-                                <input type="button" value="ライブギャラリー">
-                            </h3>
+        <div class="contents-wrapper">
+            <section id="profile">
+                <div class="box">
+                    <div class="container">
+                        <h2>☆About Me</h2>
+                        <div>
+                            <div class="myPhoto"><img src="img/img_self03.jpg" alt="自分の写真" width="200" height="200">
+                            </div>
+                            <div class="kanji">王　宇星</div>
+                            <div class="kana">オウ　ウセイ</div>
+                            <div class="alphabet">WANG YUXING</div>
+                        </div>
+                        <div>
+                            <h3>使える言語</h3>
+                            <p>日本語、英語、中国語</p>
+                            <h3>スキル</h3>
+                            <p>HTML5、CSS3、Javascript、jQuery、Vue、Ruby、Ruby on Rails
+                            </p>
+                            <h3>使えるツール</h3>
+                            <p>VS Code、Photoshop、Illustrator、XD</p>
+                            <h3>取得資格</h3>
+                            <p>TOEIC 890点、
+                                <br>日本語検定1級、
+                                <br>ITパスポート、
+                                <br>色彩検定3級、
+                            </p>
+                            <h3>好きな言葉</h3>
+                            <p>Keep learning,keep growing</p>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <section id="chronology">
+                <div class="box">
+                    <div class="container white">
+                        <div class="box02">
+                            <h2>☆My年表</h2>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>2019.4-2020.1</td>
+                                        <td>日本電子専門学校　Webデザイン科</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016.10-2019.3</td>
+                                        <td>早稲田大学院　アジア太平洋研究科　<br>国際経済ゼミ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2012.9-2016.6</td>
+                                        <td>（中国）上海財経大学　外国語学部　<br>ビジネス英語専攻</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2009.9-2012.6</td>
+                                        <td>（中国）南昌市外国語学校（高等学校）</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2006.9-2009.6</td>
+                                        <td>（中国）南昌市外国語学校（中学校）</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+            </section>
+
+            <section id="strength">
+                <div class="box">
+                    <div class="container">
+                        <h2>☆My長所</h2>
+                        <ul class="box03">
+                            <li class="text-content"><span class="size-change">チャレンジ</span>精神があります。常に新しい物を自主的に学んでいます。
+                            </li>
+                            <li class="text-content"><span
+                                    class="size-change">堅実</span>的に物事に取り組む人です。自分の決めた目標に向けて一途に努力するようにしています。</li>
+                            <li class="text-content"><span
+                                    class="size-change">独学力</span>が高いと思います。大学時期に2年半の独学で日本語検定1級を取得しました。</li>
+                        </ul>
                     </div>
                 </div>
-                        <script>
-                                new Vue({
-                                    el: '#hobby',
-                                    data: {
-                                        show: true
-                                  }
-                                });
-                        </script>
-                    </section>
+            </section>
+            <section id="hobby">
+                <div class="box wider">
+                    <div class="container white">
+                        <div>
+                            <h2>☆My趣味</h2>
+                            <div class="text-content04">
+                                <p><span>☆趣味は旅行と美術館巡りです☆</span>
+                                    <br>　　日本に来てから、たくさんの旅をしてきました。人気スポットから、人あまりいない田舎まで、たくさん回ってきました。
+                                    <br>　　各地の美術館にいつも興味津々、旅の中に必ず回っていきます。
+                                </p>
+                            </div>
+                            <div class="btn">
+                                <h3>
+                                    <input class="modal-open" data-target="modal01" type="button" value="旅行ギャラリー">
+                                </h3>
+                                <h3>
+                                    <input class="modal-open" data-target="modal02" type="button" value="芸術＆歴史勉強NOTE">
+                                </h3>
+                            </div>
+                            <!-- modal -->
+                            <div id="modal01" class="modal">
+                                <div class="modal-content">
+                                    <button class="modal-close"><span>&times;</span></button>
+                                    <div class="modal-inner">
+                                        <p>更新中...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="modal02" class="modal">
+                                <div class="modal-content">
+                                    <button class="modal-close"><span>&times;</span></button>
+                                    <div class="modal-inner">
+                                        <p>更新中...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p id="page_top"><a href="#"></a></p>
-                <script>
-                jQuery(function() {
-                var appear = false;
-                var pagetop = $('#page_top');
-                $(window).scroll(function () {
-                    if ($(this).scrollTop() > 100) {  //100pxスクロールしたら
-                    if (appear == false) {
-                        appear = true;
-                        pagetop.stop().animate({
-                        'bottom': '10px' //下から50pxの位置に
-                        }, 300); //0.3秒かけて現れる
-                    }
-                    } else {
-                    if (appear) {
-                        appear = false;
-                        pagetop.stop().animate({
-                        'bottom': '-10px' //下から-50pxの位置に
-                        }, 300); //0.3秒かけて隠れる
-                    }
-                    }
-                });
-                pagetop.click(function () {
-                    $('body, html').animate({ scrollTop: 0 }, 500); //0.5秒かけてトップへ戻る
-                    return false;
-                });
-                });
-                </script>
+            </section>
+        </div>
+        <p id="page_top"><a href="#"></a></p>
+        <script>
+
+        </script>
     </main>
     <footer>
         <div class="footer-wrapper">
-            <address>お問い合わせ：yukiwyx1019@gmail.com</address>
-            <small>&copy;2019 YUXING WANG</small>
+            <span>CONTACT ME：<address><a href="mailto:yukiwyx1019@gmail.com">yukiwyx1019@gmail.com</a></address></span>
+            <small>&copy;YUXING WANG</small>
         </div>
     </footer>
 </body>
+
 </html>
