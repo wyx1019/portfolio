@@ -39,27 +39,24 @@ var scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
 });
 
-// modal
+//modal
 $(function () {
   var winScrollTop;
-  $(".modal-open").each(function () {
-    $(this).on("click", function () {
-      var target = $(this).data("target"); // 通过data-target="modal01"和id一一对应
-      var modal = document.getElementById(target); //获取对应的id
+  $('.modal-open').each(function () {
+    $(this).on('click', function () {
+      var target = $(this).data('target');
+      var modal = document.getElementById(target);
       $(modal).fadeIn();
       winScrollTop = $(window).scrollTop();
     });
   });
-  $(".modal-close").on("click", function () {
-    $(".modal").fadeOut();
-    $("body,html").stop().animate({
-        scrollTop: winScrollTop,
-      },
-      1000
-    );
+  $('.modal-close').on('click', function () {
+    $('.modal').fadeOut();
+    $('body,html').stop().animate({
+      scrollTop: winScrollTop
+    }, 1000);
   });
 });
-
 // fade in 
 $(function () {
   $('.basic-info').css('opacity', '0');
