@@ -227,17 +227,17 @@ table {
     display: block;
     margin: 40px auto;
     border: #ccc 1px solid;
+  }
+
+  .web {
+    @extend .piece;
+    margin-bottom: 40px;
 
     &:hover {
       cursor: pointer;
       transition: all .3s ease;
       transform: scale(1.1);
     }
-  }
-
-  .web {
-    @extend .piece;
-    margin-bottom: 40px;
   }
 
 }

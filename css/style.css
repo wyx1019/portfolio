@@ -239,16 +239,16 @@ table td:first-child {
   border: #ccc 1px solid;
 }
 
-#works .flex .piece:hover, #works .flex .web:hover {
+#works .flex .web {
+  margin-bottom: 40px;
+}
+
+#works .flex .web:hover {
   cursor: pointer;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-#works .flex .web {
-  margin-bottom: 40px;
 }
 
 #page_top {
