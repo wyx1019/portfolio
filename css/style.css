@@ -31,7 +31,6 @@ ol {
 .box {
   max-width: 700px;
   margin: 100px auto;
-  padding-top: -100px;
 }
 
 .container {
@@ -245,10 +244,25 @@ table td:first-child {
 
 #works .flex .web:hover {
   cursor: pointer;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.design {
+  margin-top: 20px;
+  margin-bottom: -5px;
+  display: inline-block;
+}
+
+.design:hover {
+  cursor: pointer;
+}
+
+.design:hover span {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
 }
 
 #page_top {

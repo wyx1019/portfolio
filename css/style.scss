@@ -1,3 +1,5 @@
+//base
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,7 +13,6 @@ body {
   background: white;
   line-height: 1.7;
   width: 100%;
-  // font-family: 'Gabriela', 'Noto Serif JP', serif;
 }
 
 li {
@@ -31,7 +32,6 @@ ol {
 .box {
   max-width: 700px;
   margin: 100px auto;
-  padding-top: -100px;
 }
 
 .container {
@@ -235,57 +235,29 @@ table {
 
     &:hover {
       cursor: pointer;
-      transition: all .3s ease;
+      transition: all 0.3s ease;
       transform: scale(1.1);
     }
   }
 
+  // .graphics-show {
+  //   display: block;
+  // }
 }
 
-// .text-content04 {
-//   width: 100%;
-//   margin: 0 auto;
-//   padding: 0 15%;
+.design {
+  margin-top: 20px;
+  margin-bottom: -5px;
+  display: inline-block;
 
-//   p {
-//     text-align: left;
+  &:hover {
+    cursor: pointer;
 
-//     span {
-//       display: block;
-//       text-align: center;
-//     }
-//   }
-// }
-
-// .btn {
-//   margin: 40px;
-//   display: flex;
-//   justify-content: center;
-//   flex-wrap: wrap;
-
-//   div {
-//     margin: 20px 0;
-
-//     a {
-//       background: none;
-//       border: #687caf 2px solid;
-//       border-radius: 5px;
-//       color: #687caf;
-//       width: 300px;
-//       height: 150px;
-//       padding: 40px;
-//       margin: 0 40px;
-//       font-size: 1.2rem;
-//       transition: 0.4s;
-//       cursor: pointer;
-
-//       &:hover {
-//         background: #687caf;
-//         color: white;
-//       }
-//     }
-//   }
-// }
+    span {
+      transform: translateY(3px);
+    }
+  }
+}
 
 // page top
 #page_top {
