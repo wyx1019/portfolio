@@ -30,11 +30,11 @@ ol {
 
 .box {
   max-width: 700px;
-  margin: 100px auto;
+  margin: 0 auto;
 }
 
 .container {
-  margin: 60px 20px;
+  margin: 60px 20px 20px;
   padding: 10px 5px 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -70,6 +70,8 @@ nav {
   top: 0;
   left: 0;
   z-index: 888;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 nav .nav-list {
@@ -91,10 +93,11 @@ nav .nav-list .menu-item a {
   color: #010141;
   font-weight: 600;
   padding: 10px;
+  border-radius: 2px;
 }
 
 nav .nav-list .menu-item a:hover {
-  background: rgba(226, 226, 226, 0.5);
+  border-bottom: 3px solid #010141;
 }
 
 nav .logo {
@@ -147,7 +150,8 @@ nav .logo li {
 #profile {
   background: url(../img/bg.jpg) no-repeat center center fixed;
   background-size: cover;
-  padding: 25px 0 50px;
+  padding: 25px 0 70px;
+  margin-bottom: 100px;
 }
 
 #profile .myPhoto img {
@@ -171,53 +175,31 @@ nav .logo li {
   margin-top: 20px;
 }
 
-#chronology .box02 {
-  margin: 30px 10px 50px;
-  padding: 20px 5px;
+#profile .profile-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-table {
-  margin: 0 auto;
-  padding: 20px 30px;
-  border: #010141 2px solid;
-  border-radius: 5px;
-  text-align: left;
-  letter-spacing: -0.3px;
+#profile .profile-details li {
+  padding: 5px 10px;
+  margin: 10px;
+  background: #010141;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-table tr {
-  display: block;
-  margin: 20px 0;
-}
-
-table td {
-  display: inline-block;
-}
-
-table td:first-child {
-  font-weight: 600;
-  font-size: 0.8rem;
-}
-
-#strength {
-  background-image: radial-gradient(#c2e9fb -50%, #687caf 120%);
-  padding: 25px 0 50px;
-}
-
-.text-content {
-  padding: 10px 25px;
-  max-width: 550px;
-  text-align: justify;
-  margin: 0 auto;
-}
-
-.text-content .size-change {
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-.box03 {
-  padding-bottom: 20px;
+#profile .profile-details li:hover {
+  -webkit-animation: swing;
+          animation: swing;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
 }
 
 #works .wider {
@@ -296,6 +278,8 @@ table td:first-child {
   border-radius: 10px;
   padding: 2px 10px;
   display: inline-block;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .modal .modal-inner .grid div, .modal .modal-inner .grid .site-img {
@@ -396,7 +380,7 @@ table td:first-child {
 }
 
 .modal .modal-inner .description ul li {
-  list-style-type: initial;
+  list-style-type: square;
 }
 
 .modal .modal-inner .description dl dt {
@@ -417,6 +401,8 @@ table td:first-child {
   background: lightsteelblue;
   -webkit-box-shadow: 2px 2px 6px #eef9fa;
           box-shadow: 2px 2px 6px #eef9fa;
+  padding: 20px;
+  margin: 0 0 100px;
 }
 
 .contact address {
@@ -426,6 +412,8 @@ table td:first-child {
   padding: 5px 10px;
   background: #010141;
   border-radius: 30px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .contact address:hover {
