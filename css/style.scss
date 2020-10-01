@@ -65,7 +65,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  // z-index: 888;
+  z-index: 888;
 
   .nav-list {
     list-style: none;
@@ -295,7 +295,7 @@ table {
 
         img {
           width: 100%;
-          box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.3)
+          box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.3);
         }
       }
 
@@ -345,7 +345,6 @@ table {
       }
     }
 
-
     button {
       color: #010141;
       font-size: 40px;
@@ -358,7 +357,7 @@ table {
       border-radius: 100%;
       background: transparent;
       border: none;
-      transition: all .3s ease;
+      transition: all 0.3s ease;
 
       &:hover {
         color: #fff;
@@ -402,9 +401,33 @@ table {
             font-weight: bold;
           }
         }
-
       }
+    }
+  }
+}
 
+//contact
+.contact {
+  background: rgb(176, 196, 222);
+  box-shadow: 2px 2px 6px rgb(238, 249, 250);
+  address {
+    display: inline-block;
+    width: 250px;
+    margin: 40px auto;
+    padding: 5px 10px;
+    background: #010141;
+    border-radius: 30px;
+    &:hover {
+      text-decoration: underline;
+      background: #fff;
+      a {
+        color: #010141;
+      }
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
     }
   }
 }
@@ -475,19 +498,6 @@ footer {
   .footer-wrapper {
     padding: 5px;
     font-size: 0.8rem;
-
-    address {
-      display: inline;
-
-      a {
-        color: white;
-        text-decoration: none;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
 
     small {
       display: block;
@@ -575,7 +585,6 @@ footer {
         h3 br {
           display: none;
         }
-
       }
     }
 
