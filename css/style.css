@@ -23,6 +23,13 @@ ol {
   padding: 0;
 }
 
+button {
+  background: transparent;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
 .contents-wrapper {
   width: 100%;
   margin: 0 auto;
@@ -184,6 +191,7 @@ nav .logo li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 600px;
 }
 
 #profile .profile-details li {
@@ -260,13 +268,17 @@ nav .logo li {
   overflow-y: scroll;
 }
 
+.modal .detail {
+  padding: 7%;
+}
+
 .modal .modal-inner {
   position: relative;
   background: lightsteelblue;
   width: 70%;
   margin: 0 auto;
-  -webkit-box-shadow: 0 25px 15px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 25px 15px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 }
 
 .modal .modal-inner h3 {
@@ -503,7 +515,7 @@ footer .footer-wrapper small {
 }
 
 @media (min-width: 768px) {
-  br {
+  .hide {
     display: none;
   }
   .kana {
