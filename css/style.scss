@@ -301,11 +301,11 @@ nav {
   overflow-y: scroll;
 
   .detail {
-    // position: absolute;
-    // transform: translate(-50%, -50%);
-    // top: 50%;
-    // left: 50%;
+    transform: translateY(25%);
     padding: 7%;
+    position: absolute;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    background: rgb(176, 196, 222);
   }
 
   .modal-inner {
@@ -357,6 +357,7 @@ nav {
 
             &:first-child {
               font-size: 1rem;
+              font-weight: 700;
             }
           }
         }

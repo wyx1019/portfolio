@@ -269,7 +269,13 @@ nav .logo li {
 }
 
 .modal .detail {
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
   padding: 7%;
+  position: absolute;
+  -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  background: lightsteelblue;
 }
 
 .modal .modal-inner {
@@ -326,6 +332,7 @@ nav .logo li {
 
 .modal .modal-inner .grid table tr td:first-child {
   font-size: 1rem;
+  font-weight: 700;
 }
 
 .modal .modal-inner .btn {
