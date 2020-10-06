@@ -337,6 +337,7 @@ nav .logo li {
 
 .modal .modal-inner .btn {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .modal .modal-inner .btn a {
@@ -347,7 +348,7 @@ nav .logo li {
   color: #fff;
   background: #010141;
   padding: 1.5% 4%;
-  margin: 14px auto 40px;
+  margin: 15px;
   border-radius: 30px;
   text-align: center;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
@@ -405,6 +406,10 @@ nav .logo li {
 .modal .modal-inner .description dl dt {
   margin-top: 10px;
   font-weight: bold;
+}
+
+.modal .modal-inner .description dl dt:first-child {
+  margin-left: 5%;
 }
 
 .modal .modal-inner .description dl dd {
