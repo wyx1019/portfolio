@@ -269,13 +269,16 @@ nav .logo li {
 }
 
 .modal .detail {
-  -webkit-transform: translateY(25%);
-          transform: translateY(25%);
-  padding: 7%;
   position: absolute;
+  padding: 7%;
   -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
   background: lightsteelblue;
+  border-radius: 5px;
+}
+
+.modal .detail td {
+  padding: 1vw 0.5vw;
 }
 
 .modal .modal-inner {
@@ -362,9 +365,9 @@ nav .logo li {
 .modal .modal-inner button {
   color: #010141;
   font-size: 40px;
-  position: absolute;
+  position: fixed;
   top: 25px;
-  right: -10vw;
+  right: 2vw;
   width: 50px;
   height: 50px;
   cursor: pointer;
@@ -436,8 +439,8 @@ nav .logo li {
   padding: 5px 10px;
   background: #010141;
   border-radius: 30px;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .contact address:hover {
@@ -545,13 +548,6 @@ footer .footer-wrapper small {
   .top img {
     height: 350px;
   }
-  .box05 .btn {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  .text-content04 br {
-    display: block;
-  }
   #works .flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -565,6 +561,14 @@ footer .footer-wrapper small {
   #works .flex .piece, #works .flex .web {
     width: 40%;
     height: 10%;
+  }
+  .detail {
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%);
+  }
+  .detail-table {
+    -webkit-transform: translate(25%, 30%);
+            transform: translate(25%, 30%);
   }
 }
 
