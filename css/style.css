@@ -23,6 +23,11 @@ ol {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 button {
   background: transparent;
   color: #fff;
@@ -222,14 +227,20 @@ nav .logo li {
   margin-top: 40px;
 }
 
-#works .flex .piece, #works .flex .web {
-  display: block;
-  margin: 40px auto;
-  border: #ccc 1px solid;
+#works .flex .piece {
+  margin: 10px auto 30px;
 }
 
-#works .flex .web {
-  margin-bottom: 40px;
+#works .flex .piece h3 {
+  font-size: 1rem;
+}
+
+#works .flex .piece p {
+  font-size: 0.6rem;
+}
+
+#works .flex .piece button:focus {
+  border: none;
 }
 
 #works .flex .web:hover {
@@ -558,9 +569,8 @@ footer .footer-wrapper small {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  #works .flex .piece, #works .flex .web {
+  #works .flex .piece {
     width: 40%;
-    height: 10%;
   }
   .detail {
     -webkit-transform: translateY(25%);
