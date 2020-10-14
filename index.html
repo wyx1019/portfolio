@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen,tv" />
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/smooth-scroll.min.js"></script>
     <script src="js/script.js"></script>
@@ -31,19 +30,19 @@
     </header>
     <main>
         <div class="top">
-            <div class="top-text">
+            <div class="top-text fadeIn">
                 <p>はじめまして、<span>オウ　ウセイ</span>です。</p>
                 <p>日本でWebエンジニアを目指して <br class="hide" />頑張っています。</p>
                 <p>KEEP LEARNING, KEEP GROWING.</p>
             </div>
-            <div class="mv"><img src="img/bg_main.svg" alt="" /></div>
+            <div class="mv fadeIn"><img src="img/bg_main.svg" alt="" /></div>
         </div>
         <div class="contents-wrapper">
             <section id="profile">
                 <div class="box">
                     <div class="container">
                         <h2>☆About Me</h2>
-                        <div class="basic-info">
+                        <div class="basic-info fadeIn">
                             <div class="myPhoto">
                                 <img src="img/img_self03.jpg" alt="自分の写真" width="200" height="200" />
                             </div>
@@ -51,7 +50,7 @@
                             <div class="kana">オウ　ウセイ</div>
                             <div class="alphabet">WANG YUXING</div>
                         </div>
-                        <div class="ability">
+                        <div class="ability fadeIn">
                             <h3>スキル</h3>
                             <ul>
                                 <li>HTML5/CSS3/SASS　<span class="star">★★★★☆</span></li>
@@ -88,15 +87,8 @@
                 <div class="box wider fadeIn">
                     <div class="container white">
                         <h2>☆My Works</h2>
-                        <p>専門学校時期の課題を土台に、独学で新たに得た知識を取り入れて制作したものです。</p>
+                        <p>専門学校時期の課題を土台に、独学で得た知識を取り入れて制作したものです。</p>
                         <div class="flex">
-                            <div class="piece">
-                                <button class="web modal-open" data-target="modal01">
-                                    <img src="img/spofes.JPG" alt="「spofes」のメインビジュアル" />
-                                </button>
-                                <h3>スポフェス-Campus Tweets App</h3>
-                                <p>Ruby on Rails 6 / Ruby / JQuery / JavaScript / Bootstrap / SASS / CSS / HTML</p>
-                            </div>
                             <div class="piece">
                                 <button class="web modal-open" data-target="modal08">
                                     <a href="https://polar-plateau-39161.herokuapp.com/" target="_blank"><img
@@ -111,6 +103,13 @@
                                 </button>
                                 <h3>Haco-完全定額制住宅</h3>
                                 <p>JQuery / JavaScript / SASS / CSS / HTML</p>
+                            </div>
+                            <div class="piece">
+                                <button class="web modal-open" data-target="modal01">
+                                    <img src="img/spofes.JPG" alt="「spofes」のメインビジュアル" />
+                                </button>
+                                <h3>スポフェス-Campus Tweets App</h3>
+                                <p>Ruby on Rails 6 / Ruby / JQuery / JavaScript / Bootstrap / SASS / CSS / HTML</p>
                             </div>
                         </div>
                     </div>
@@ -225,13 +224,13 @@
                                 </tr>
                                 <tr>
                                     <td>制作時期：</td>
-                                    <td>2019年11月-1月</td>
+                                    <td>主に2019年11月-1月、2020年10月に修正</td>
                                 </tr>
                                 <tr>
                                     <td>使用スキル：</td>
                                     <td>
                                         JQuery、 SASS、 HTML、
-                                        Google Map API(調べながら使ってみました)
+                                        Google Map API
                                     </td>
                                 </tr>
                                 <tr>
@@ -244,8 +243,8 @@
                     <div class="btn">
                         <a href="https://wyx1019.github.io/Haco-/" target="_blank">サイトを見る　<span
                                 class="fa fa-arrow-right" aria-hidden="true"></span></a>
-                        <a href="https://wyx1019.github.io/googleMapAPI-haco/" target="_blank">マッピングを見る　<span
-                                class="fa fa-arrow-right" aria-hidden="true"></span></a>
+                        <!-- <a href="https://wyx1019.github.io/googleMapAPI-haco/" target="_blank">マッピングを見る　<span
+                                class="fa fa-arrow-right" aria-hidden="true"></span></a> -->
                     </div>
                     <div class="description">
                         <h4>背景説明</h4>
@@ -259,7 +258,10 @@
                             サイトの目的は葉山と「Haco」の認知度を上げて、お問い合わせの数または公式サイト
                             への流入数を増やすことです。
                         </p>
-                        <h4>※Google Map APIを試してみました</h4>
+                        <h4>※Google Map APIを使ってみました</h4>
+                        <p>2020年6月にGoogle Map APIを使用して、葉山のマッピングを追加しました。
+                            マップのスタイルのカストマイズ、表示項目の変更、複数のマーカーと吹き出しの設置などをやってみました。</p>
+                        <div class="mapping"><img src="img/hayama-mapping.JPG" alt="葉山マッピングのスクリーンショット"></div>
                     </div>
                 </div>
             </div>
@@ -271,7 +273,7 @@
                             <tbody>
                                 <tr>
                                     <td>2019.04-2020.02</td>
-                                    <td>日本電子専門学校　Webデザイン科</td>
+                                    <td>日本電子専門学校　Webデザイン科 (中退)</td>
                                 </tr>
                                 <tr>
                                     <td>2016.10-2019.03</td>

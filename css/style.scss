@@ -65,6 +65,12 @@ h2 {
   margin: 30px auto;
 }
 
+.fadeIn{
+  opacity: 0;
+  transition: all .5s ease-in-out;
+  transform: translateY( 30px);
+}
+
 // header
 nav {
   background: white;
@@ -117,6 +123,10 @@ nav {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
+      &:hover{
+        transform: translateY(-2px);
+      }
     }
   }
 }
@@ -218,6 +228,12 @@ nav {
     }
 
     button {
+      img{
+        width: 335px;
+        height: 180px;
+        display: block;
+        overflow: hidden;
+      }
       &:focus {
         border: none;
       }
@@ -230,20 +246,6 @@ nav {
       cursor: pointer;
       transition: all 0.3s ease;
       transform: scale(1.1);
-    }
-  }
-}
-
-.design {
-  margin-top: 20px;
-  margin-bottom: -5px;
-  display: inline-block;
-
-  &:hover {
-    cursor: pointer;
-
-    span {
-      transform: translateY(3px);
     }
   }
 }
@@ -348,6 +350,7 @@ nav {
 
         &:hover {
           opacity: 0.8;
+          transform: translateY(-2px);
         }
       }
     }
@@ -377,6 +380,13 @@ nav {
       margin: 0 auto;
       padding: 40px 5%;
       border-top: 2px solid #010141;
+      .mapping{
+        width: 100%;
+        margin: 10px 0;
+        img{
+          width: 100%;
+        }
+      }
 
       h4 {
         display: inline-block;

@@ -65,6 +65,14 @@ h2 {
   margin: 30px auto;
 }
 
+.fadeIn {
+  opacity: 0;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+}
+
 nav {
   background: white;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3);
@@ -137,6 +145,12 @@ nav .logo li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
+}
+
+nav .logo li:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .top {
@@ -239,6 +253,13 @@ nav .logo li {
   font-size: 0.6rem;
 }
 
+#works .flex .piece button img {
+  width: 335px;
+  height: 180px;
+  display: block;
+  overflow: hidden;
+}
+
 #works .flex .piece button:focus {
   border: none;
 }
@@ -249,21 +270,6 @@ nav .logo li {
   transition: all 0.3s ease;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-.design {
-  margin-top: 20px;
-  margin-bottom: -5px;
-  display: inline-block;
-}
-
-.design:hover {
-  cursor: pointer;
-}
-
-.design:hover span {
-  -webkit-transform: translateY(3px);
-          transform: translateY(3px);
 }
 
 .modal {
@@ -371,6 +377,8 @@ nav .logo li {
 
 .modal .modal-inner .btn a:hover {
   opacity: 0.8;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .modal .modal-inner button {
@@ -399,6 +407,15 @@ nav .logo li {
   margin: 0 auto;
   padding: 40px 5%;
   border-top: 2px solid #010141;
+}
+
+.modal .modal-inner .description .mapping {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.modal .modal-inner .description .mapping img {
+  width: 100%;
 }
 
 .modal .modal-inner .description h4 {

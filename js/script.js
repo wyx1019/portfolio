@@ -61,59 +61,24 @@ $(function () {
 });
 
 // accordion
-$(function () {
-  $(".design").on("click", function () {
-    $(".graphics").slideToggle();
-  });
-});
+// $(function () {
+//   $(".design").on("click", function () {
+//     $(".graphics").slideToggle();
+//   });
+// });
 
 // fade in
-$(function () {
-  $(".basic-info").css("opacity", "0");
-  $(".ability").css("opacity", "0");
-  $(window).scroll(function () {
-    $(".basic-info").each(function () {
-      var imgPos = $(this).offset().top;
-      var scroll = $(window).scrollTop();
-      var windowHeight = $(window).height();
-      if (scroll > imgPos - windowHeight + windowHeight / 5) {
-        $(".basic-info").addClass("animate__animated animate__fadeIn");
-        $(".ability")
-          .addClass("animate__animated animate__fadeIn")
-          .css("animation-delay", ".4s");
-      }
-    });
-  });
-});
 
 $(function () {
-  $(".contact").css("opacity", "0");
   $(window).scroll(function () {
-    $(".contact").each(function () {
-      var imgPos = $(this).offset().top;
-      var scroll = $(window).scrollTop();
-      var windowHeight = $(window).height();
-      if (scroll > imgPos - windowHeight + windowHeight / 7) {
-        $(".contact")
-          .addClass("animate__animated animate__fadeIn")
-          .css("animation-delay", ".3s");
-      }
-    });
-  });
-});
-
-$(function () {
-  $(".wider").css("opacity", "0");
-  $(window).scroll(function () {
-    $(".wider").each(function () {
-      var imgPos = $(this).offset().top;
-      var scroll = $(window).scrollTop();
-      var windowHeight = $(window).height();
-      if (scroll > imgPos - windowHeight + windowHeight / 7) {
-        $(".wider")
-          .addClass("animate__animated animate__fadeIn")
-          .css("animation-delay", ".3s");
-      }
-    });
+      $('.fadeIn').each(function () {
+          var targetElement = $(this).offset().top;
+          var scroll = $(window).scrollTop();
+          var windowHeight = $(window).height();
+          if (scroll > targetElement - windowHeight) {
+              $(this).css('opacity', '1');
+              $(this).css('transform', 'translateY(0)');
+          }
+      });
   });
 });
