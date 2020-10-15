@@ -30,12 +30,12 @@
     </header>
     <main>
         <div class="top">
-            <div class="top-text fadeIn">
-                <p>はじめまして、<span>オウ　ウセイ</span>です。</p>
+            <div class="top-text entrance">
+                <p>はじめまして、中国出身の<span>オウ　ウセイ</span>です。</p>
                 <p>日本でWebエンジニアを目指して <br class="hide" />頑張っています。</p>
                 <p>KEEP LEARNING, KEEP GROWING.</p>
             </div>
-            <div class="mv fadeIn"><img src="img/bg_main.svg" alt="" /></div>
+            <div class="mv topFadeIn delay800"><img src="img/bg_main.svg" alt="" /></div>
         </div>
         <div class="contents-wrapper">
             <section id="profile">
@@ -90,6 +90,13 @@
                         <p>専門学校時期の課題を土台に、独学で得た知識を取り入れて制作したものです。</p>
                         <div class="flex">
                             <div class="piece">
+                                <button class="web modal-open" data-target="modal02">
+                                    <img src="img/haco.JPG" alt="「haco」のメインビジュアル" />
+                                </button>
+                                <h3>Haco-完全定額制住宅</h3>
+                                <p>JQuery / JavaScript / SASS / CSS / HTML</p>
+                            </div>
+                            <div class="piece">
                                 <button class="web modal-open" data-target="modal08">
                                     <a href="https://polar-plateau-39161.herokuapp.com/" target="_blank"><img
                                             src="img/weather.jpg" alt="「天気アプリ」のメインビジュアル" /></a>
@@ -98,18 +105,11 @@
                                 <p>Vue-CLI 4.x / Vue.js / JavaScript / CSS / HTML</p>
                             </div>
                             <div class="piece">
-                                <button class="web modal-open" data-target="modal02">
-                                    <img src="img/haco.JPG" alt="「haco」のメインビジュアル" />
-                                </button>
-                                <h3>Haco-完全定額制住宅</h3>
-                                <p>JQuery / JavaScript / SASS / CSS / HTML</p>
-                            </div>
-                            <div class="piece">
                                 <button class="web modal-open" data-target="modal01">
                                     <img src="img/spofes.JPG" alt="「spofes」のメインビジュアル" />
                                 </button>
                                 <h3>スポフェス-Campus Tweets App</h3>
-                                <p>Ruby on Rails 6 / Ruby / JQuery / JavaScript / Bootstrap / SASS / CSS / HTML</p>
+                                <p>Ruby on Rails 6 / Ruby / AWS / JQuery / JavaScript / Bootstrap / SASS / CSS / HTML</p>
                             </div>
                         </div>
                     </div>
@@ -129,7 +129,7 @@
                 </div>
             </section>
             <div id="modal01" class="modal">
-                <div class="modal-inner">
+                <div class="modal-inner bgBlue">
                     <button class="modal-close"><span>&times;</span></button>
                     <h3>スポフェス <br class="hide" />- Campus Tweets App</h3>
                     <div class="grid">
@@ -147,8 +147,8 @@
                                 <tr>
                                     <td>使用スキル：</td>
                                     <td>
-                                        Ruby 2.6.6（独学）、 Rails 6（独学）、 Bootstrap（独学）、
-                                        JQuery、 SASS、 HTML
+                                        Ruby 2.6.6、 Rails 6、AWS、
+                                        JQuery/JavaScript、 Bootstrap、SASS/CSS、 HTML
                                     </td>
                                 </tr>
                             </tbody>
@@ -201,17 +201,24 @@
                             </dd>
                             <dd><span>Password:</span> 000000</dd>
                         </dl>
-                        <h4>※Ruby on Railsを試してみました</h4>
+                        <h4>※Ruby on Railsを独学しました。</h4>
                         <p>
-                            　　元々このスポフェスサイトを企画する際に、生徒たちが交流が増やせるようなwebサービスを考えていました。この間、サーバーサイドの言語を気になって、Progateを利用してphp、ruby、Ruby
-                            on
-                            Railsを一周してみました。それらによって、過去一度考えたものが実現できそうと気づき、ささっと手掛けてきました。初心者として、サーバーサイドの知識が思ったより奥深いですけれども、私は色々調べながら、困難を一つ一つ乗り越えて、作りたい機能を全て作ることが出来ました。学び始めてから完全まで2ヶ月がかかりました。
+                            　　
+                            過去の作品をデータベースを使用したシステムと連動させてみたいと思って、サーバーサイドの言語を学ぶことにしました。
+                            最初はProgateを利用してphp、ruby、Ruby on Railsのコースを一周してみましたが、より深く理解するために、Ruby on Railsのチュートリアル（日本語版）を読みました。それをベースに自分の制作を取り組んでいきました。
+                            初心者として、サーバーサイドの知識が思ったより奥深いですけれども、私は色々調べながら、困難を一つ一つ乗り越えて、一人で作りたい機能を作ることが出来ました。学習開始から完成まで2ヶ月かかりました。
+                        
                         </p>
+                        <h4>今後のアップデート予定</h4>
+                            <ul>
+                                <li>スマホアプリに応じたデザインに変更</li>
+                                <li>パスワードの再設定・「remember me」・アカウントを有効化するメール送信などの機能追加</li>
+                            </ul>
                     </div>
                 </div>
             </div>
             <div id="modal02" class="modal">
-                <div class="modal-inner">
+                <div class="modal-inner bgBlue">
                     <button class="modal-close"><span>&times;</span></button>
                     <h3>Haco <br class="hide" />- 完全定額制住宅</h3>
                     <div class="grid">
@@ -224,12 +231,12 @@
                                 </tr>
                                 <tr>
                                     <td>制作時期：</td>
-                                    <td>主に2019年11月-1月、2020年10月に修正</td>
+                                    <td>主に2019年11月-1月、2020年10月にデザインとレスポンシブ対応の修正を入れた</td>
                                 </tr>
                                 <tr>
                                     <td>使用スキル：</td>
                                     <td>
-                                        JQuery、 SASS、 HTML、
+                                        JQuery/JavaScript、 SASS/CSS、 HTML、
                                         Google Map API
                                     </td>
                                 </tr>
@@ -273,7 +280,7 @@
                             <tbody>
                                 <tr>
                                     <td>2019.04-2020.02</td>
-                                    <td>日本電子専門学校　Webデザイン科 (中退)</td>
+                                    <td>日本電子専門学校　Webデザイン科 (コロナと家庭の事情により中退)</td>
                                 </tr>
                                 <tr>
                                     <td>2016.10-2019.03</td>
@@ -300,8 +307,8 @@
                 <div class="modal-inner ">
                     <button class="modal-close"><span>&times;</span></button>
                     <p class="detail">
-                        　　大学院で使った統計解析ソフトが私はプログラミングに好奇心を持ったきっかけです。コードを打つことで、様々な課題を解決できるということにやりがいを感じましたので、将来プログラミングを身につけ、技術を活かせる仕事をしたいと思いました。web
-                        を選んだ理由の一つは成果がすぐにビジュアルで見れて、達成感を感じやすいことです。また、デザイナーの知人からの影響で、デザインに憧れる部分もあります。今後、技術を中心に高めていくながら、デザイン力も身につけたらという考えを踏まえて、専門学校でWebデザインの勉強を始めました。
+                        　　大学院で使った統計解析ソフトが私はプログラミングに好奇心を持ったきっかけです。それに加えて、IT技術で世の中が変化し続くことに気づき、新しい価値を創造する仕事にやりがいを感じました。将来プログラミングを身につけ、技術を活かせる仕事をしたいと思いました。web
+                        を選んだ理由の一つは成果がすぐにビジュアルで見れて、達成感を感じやすいこと。また、デザイナーの知人からの影響で、デザインに憧れる部分もあります。今後、技術を中心に高めていくながら、デザイン力も身につけたらという考えを踏まえて、私は専門学校でWebデザインを勉強することを決めました。
                     </p>
                 </div>
             </div>
@@ -309,10 +316,9 @@
                 <div class="modal-inner ">
                     <button class="modal-close"><span>&times;</span></button>
                     <p class="detail">
-                        　　将来、モダンな技術を追いかけ、Webエンジニアを目指して自分のスキルを高めたいと思います。自分の社会価値を実現するために、より便利で使いやすいWebサービスを世の中に届けたいです。これから5年間をかけて、自分のキャリアをしっかり構築したいと考えております。まずはコーダー・マークアップエンジニアとしてスタートしたいと思います。
-                        <br>　　2018年から結婚しており、現在子供なし。将来ずっと日本に住む予定をしております。主人は永住者で基本的には都内勤務に決まっていますので、東京から引っ越しする予定がありません。出産は５年後を予定しております。出産後にも家庭と仕事を両立するようにしたいです。
-
-                        <br>　　技術を高めると共に、語学の勉強も日々忘れずにやっていきたいと思います。今後日本で生活する上、いち早く日本人並みの日本語を身につけたいと強く願っております。将来仕事の中、もし英語・中国語を活かせる機会があれば、力を発揮できる人間になりたいと思います。
+                        　　将来、Webエンジニアを目指して自分のスキルを高めたいと思います。モダンな技術を追いかける上、ユーザビリティを考えた便利なWebサービスを世の中に届けたいです。
+                        <br>　　技術を高めると共に、語学の勉強も日々忘れずにやっていきます。今後日本で生活する上、いち早く日本人並みの日本語を身につけたいと強く願っております。将来の仕事の中、もし英語・中国語を活かせる機会があれば、力を発揮できる人間になりたい。
+                        <br>　　また、私は、2018年から結婚しており、現在子供なし。将来日本に住む予定をしております。5年以内に出産・引っ越しの予定はありません。しばらくの間に、自分のキャリヤを築き上げたいと思います。
                     </p>
                 </div>
             </div>
@@ -321,7 +327,7 @@
                     <button class="modal-close"><span>&times;</span></button>
                     <p class="detail">
                         　　旅行が大好きです。日本国内ですでにたくさんの旅をしました。旅先で発見された歴史・文化がいつも私をワクワクさせます。観光客の多い場所より、主人と一緒に秘境に訪ねることが好きです。私にとって，旅行は頭のリフレッシュと新しいものを勉強するチャンスです。
-                        <br>　　最近ハマったことは、芸術鑑賞です。旅先の美術館が私の必ず行く場所となっております。今年（2020年）、在宅時間が多くなっているので、ドキュメンタリーを見たり、ヨーロッパ史や西洋美術史に関する本を読んだりしております。それゆえに、ヨーロッパへ遊びに行きたくなりますね！
+                        <br>　　最近ハマったことは、歴史・芸術です。旅先の美術館が私の必ず行く場所となっております。今年（2020年）、在宅時間が多くなっているので、ドキュメンタリーを見たり、ヨーロッパ史や西洋美術史に関する本を読んだりしております。それゆえに、ヨーロッパへ遊びに行きたくなりますね！
                     </p>
                 </div>
             </div>
@@ -333,7 +339,7 @@
                         <br>　　日本に来てから、私は英語の勉強もやめていません。毎日NHK
                         worldを聞くことを習慣として身につけております。毎日継続的な努力で、私は2018年にTOEICテストための対策がほとんどなしで890点を取りました。
                                
-                        <br>　　そのほか、私は好奇心が強く、新しいことを勉強するのは苦にならない人です。気になることであれば、常にチャレンジを恐れず自ら学んでいきます。コーディングを勉強する際に、知らない技術や専門用語とたくさん出会い、私はいつも調べずにいられなく、裏側の仕組みを探求しかちです。この間、過去の作品にRuby
+                        <br>　　そのほか、私は好奇心が強く、新しいことを勉強するのが好きです。気になることであれば、常にチャレンジを恐れず自ら学んでいきます。コーディングを勉強する際に、知らない技術や言葉とたくさん出会い、私はいつも調べずにいられなく、理解を深めるために努力しております。過去の作品にRuby
                         on Railsを取り入れることも、好奇心に駆られた結果です。
                         <br>　　Web業界の技術更新が速いというところは、私にとって、新しいことに出会え、学び続ける良い環境だと思っております。将来も、努力を積み重ね、学び続ける姿勢で自分の技術を高めていきたいと思います。
                     </p>

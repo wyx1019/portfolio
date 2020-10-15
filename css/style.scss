@@ -65,7 +65,7 @@ h2 {
   margin: 30px auto;
 }
 
-.fadeIn{
+.fadeIn, .topFadeIn{
   opacity: 0;
   transition: all .5s ease-in-out;
   transform: translateY( 30px);
@@ -138,17 +138,33 @@ nav {
 
   .top-text {
     margin: 130px auto 60px;
+    line-height: 1.8;
+    animation: zoomIn;
+    animation-duration: .8s;
 
     span {
+      display: inline-block;
+      margin: 0 5px;
+      padding:0 10px;
+      border-radius: 2px;
       color: white;
       background: #010141;
       font-size: 1.8rem;
+    }
+    p{
+      &:first-child{
+        display: block;
+        margin-bottom: 3px;
+      }
     }
   }
 
   .mv {
     width: 70%;
     margin: 0 auto 40px;
+  }
+  .delay1000{
+    transition-delay: .8s;
   }
 }
 
@@ -245,7 +261,8 @@ nav {
     &:hover {
       cursor: pointer;
       transition: all 0.3s ease;
-      transform: scale(1.1);
+      transform: translateY(-3px);
+      opacity: 0.7;
     }
   }
 }
@@ -264,23 +281,23 @@ nav {
   overflow-y: scroll;
 
   .detail {
-    position: absolute;
     padding: 7%;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
     background: rgb(176, 196, 222);
     border-radius: 5px;
+    margin: 100px 0;
 
     td {
       padding: 1vw 0.5vw;
     }
   }
+  .bgBlue{
+    background: lightsteelblue;
+  }
 
   .modal-inner {
-    position: relative;
-    background: rgb(176, 196, 222);
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 
     h3 {
       text-align: center;
@@ -298,7 +315,6 @@ nav {
       div {
         width: 100%;
         margin: 0 auto;
-        padding: 20px;
 
         img {
           width: 100%;
@@ -307,13 +323,13 @@ nav {
       }
 
       .site-img {
-        @extend div;
-        padding: 30px 20px 0;
+        width: 100%;
+        margin: 10% 0;
       }
 
       table {
         border: none;
-        padding: 0 20px;
+        padding: 0 0 0 20px;
 
         tr {
           display: block;
@@ -359,7 +375,7 @@ nav {
       color: #010141;
       font-size: 40px;
       position: fixed;
-      top: 25px;
+      top: 1px;
       right: 2vw;
       width: 50px;
       height: 50px;
@@ -570,12 +586,11 @@ footer {
     }
   }
 
-  .detail {
-    transform: translateY(25%);
-  }
-
-  .detail-table {
-    transform: translate(25%, 30%);
+  .modal .modal-inner{
+    width: 60%;
+    button{
+      top: 25px;
+    }
   }
 }
 
@@ -605,8 +620,6 @@ footer {
       }
 
       div {
-        padding: 0 40px;
-
         h3 br {
           display: none;
         }

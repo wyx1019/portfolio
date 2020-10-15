@@ -82,3 +82,8 @@ $(function () {
       });
   });
 });
+
+$(window).on('load', function () {
+  $('.topFadeIn').css('opacity', '1');
+  $('.topFadeIn').css('transform', 'translateX(0)');
+});

@@ -65,7 +65,7 @@ h2 {
   margin: 30px auto;
 }
 
-.fadeIn {
+.fadeIn, .topFadeIn {
   opacity: 0;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
@@ -160,17 +160,36 @@ nav .logo li:hover {
 
 .top .top-text {
   margin: 130px auto 60px;
+  line-height: 1.8;
+  -webkit-animation: zoomIn;
+          animation: zoomIn;
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
 }
 
 .top .top-text span {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0 10px;
+  border-radius: 2px;
   color: white;
   background: #010141;
   font-size: 1.8rem;
 }
 
+.top .top-text p:first-child {
+  display: block;
+  margin-bottom: 3px;
+}
+
 .top .mv {
   width: 70%;
   margin: 0 auto 40px;
+}
+
+.top .delay1000 {
+  -webkit-transition-delay: .8s;
+          transition-delay: .8s;
 }
 
 #profile {
@@ -268,8 +287,9 @@ nav .logo li:hover {
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  opacity: 0.7;
 }
 
 .modal {
@@ -286,25 +306,25 @@ nav .logo li:hover {
 }
 
 .modal .detail {
-  position: absolute;
   padding: 7%;
   -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
   background: lightsteelblue;
   border-radius: 5px;
+  margin: 100px 0;
 }
 
 .modal .detail td {
   padding: 1vw 0.5vw;
 }
 
-.modal .modal-inner {
-  position: relative;
+.modal .bgBlue {
   background: lightsteelblue;
-  width: 70%;
+}
+
+.modal .modal-inner {
+  width: 100%;
   margin: 0 auto;
-  -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 }
 
 .modal .modal-inner h3 {
@@ -320,25 +340,25 @@ nav .logo li:hover {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-.modal .modal-inner .grid div, .modal .modal-inner .grid .site-img {
+.modal .modal-inner .grid div {
   width: 100%;
   margin: 0 auto;
-  padding: 20px;
 }
 
-.modal .modal-inner .grid div img, .modal .modal-inner .grid .site-img img {
+.modal .modal-inner .grid div img {
   width: 100%;
   -webkit-box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.3);
           box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 .modal .modal-inner .grid .site-img {
-  padding: 30px 20px 0;
+  width: 100%;
+  margin: 10% 0;
 }
 
 .modal .modal-inner .grid table {
   border: none;
-  padding: 0 20px;
+  padding: 0 0 0 20px;
 }
 
 .modal .modal-inner .grid table tr {
@@ -385,7 +405,7 @@ nav .logo li:hover {
   color: #010141;
   font-size: 40px;
   position: fixed;
-  top: 25px;
+  top: 1px;
   right: 2vw;
   width: 50px;
   height: 50px;
@@ -589,13 +609,11 @@ footer .footer-wrapper small {
   #works .flex .piece {
     width: 40%;
   }
-  .detail {
-    -webkit-transform: translateY(25%);
-            transform: translateY(25%);
+  .modal .modal-inner {
+    width: 60%;
   }
-  .detail-table {
-    -webkit-transform: translate(25%, 30%);
-            transform: translate(25%, 30%);
+  .modal .modal-inner button {
+    top: 25px;
   }
 }
 
@@ -623,10 +641,7 @@ footer .footer-wrapper small {
   .modal .modal-inner .grid table tr {
     margin-left: 18px;
   }
-  .modal .modal-inner .grid div, .modal .modal-inner .grid .site-img {
-    padding: 0 40px;
-  }
-  .modal .modal-inner .grid div h3 br, .modal .modal-inner .grid .site-img h3 br {
+  .modal .modal-inner .grid div h3 br {
     display: none;
   }
   .modal .modal-inner .btn a {
