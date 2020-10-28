@@ -61,11 +61,18 @@ $(function () {
 });
 
 // accordion
-// $(function () {
-//   $(".design").on("click", function () {
-//     $(".graphics").slideToggle();
-//   });
-// });
+$(function () {
+  $(".toggle").hover(function(){
+    $(".fa-chevron-down").css('transform', 'translateY(5px)');
+    },function(){
+      $(".fa-chevron-down").css('transform', 'translateY(0)');
+  });
+
+  $(".toggle").on("click", function () {
+    $(".graphics").slideToggle();
+    // $(".fa-chevron-down").css('transform', 'rotate(180deg)');
+  });
+});
 
 // fade in
 

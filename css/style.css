@@ -256,40 +256,57 @@ nav .logo li:hover {
   width: 100%;
 }
 
-#works .flex {
+#works .wider .flex {
   margin-top: 40px;
 }
 
-#works .flex .piece {
+#works .wider .flex .piece {
   margin: 10px auto 30px;
 }
 
-#works .flex .piece h3 {
+#works .wider .flex .piece h3 {
   font-size: 1rem;
 }
 
-#works .flex .piece p {
+#works .wider .flex .piece p {
   font-size: 0.6rem;
 }
 
-#works .flex .piece button img {
+#works .wider .flex .piece button img {
   width: 335px;
   height: 180px;
   display: block;
   overflow: hidden;
 }
 
-#works .flex .piece button:focus {
+#works .wider .flex .piece button:focus {
   border: none;
 }
 
-#works .flex .web:hover {
+#works .wider .flex .web:hover {
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
   opacity: 0.7;
+}
+
+#works .wider .design .toggle {
+  margin-top: 20px;
+}
+
+#works .wider .design .toggle span {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+#works .wider .design .toggle:hover {
+  cursor: pointer;
+}
+
+#works .wider .design .lead {
+  margin-top: 20px;
 }
 
 .modal {
@@ -492,7 +509,6 @@ nav .logo li:hover {
 }
 
 .contact address:hover {
-  text-decoration: underline;
   background: #fff;
 }
 
